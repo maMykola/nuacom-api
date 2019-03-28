@@ -1,0 +1,14 @@
+{
+    "name": "mamykola/nuacom-api",
+    "description": "Get access to NUACOM via API calls",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mykola Martynov",
+            "email": "mykola.martynov@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
