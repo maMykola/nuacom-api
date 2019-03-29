@@ -3,13 +3,23 @@
 
 namespace Tests\Nuacom;
 
+use Nuacom\NuacomClient;
 use PHPUnit\Framework\TestCase;
 
 class NuacomClientTest extends TestCase
 {
     public function testClientInitialization()
     {
-        $this->markTestIncomplete();
+        $email = 'test@example.com';
+        $pass = 'test_password';
+        $securityToken = 'NUACOM-SECURITY-TOKEN';
+
+        $client = new NuacomClient($email, $pass, $securityToken);
+
+        $this->assertSame($email, $client->getEmail());
+        $this->assertSame($securityToken, $client->getSecurityToken());
+
+        return $client;
     }
 
     public function testRetrieveAccessTokenSuccess()
